@@ -1,4 +1,83 @@
 
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 175%;
+}
+
+/* Basic paragraph properties - for both section title and section content */
+p {
+  border: 2px solid black;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*********************************/
+
+/********** Section Styles ********/
+/* class for div container for each section*/
+.sec_container{
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+
+  position: relative;
+
+  background-color: #FDBC2D;
+}
+
+/* class for section title's specific properties */
+.sec_title {
+  margin: 0px;
+  border: 1px solid black;
+  width: 150px; /* Fixed width */
+
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  text-align: center;
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 125%;
+}
+
+.chicken {
+  background-color: #903BBE;
+  color: white;
+}
+
+.beef {
+  background-color: #4266BE;
+  color: white;
+}
+
+.sushi {
+  background-color: #00CD02;
+  color: white;
+}
+
+/* class for section content/text specific properties */
+.sec_content{
+  border: 0px;
+
+  position: relative;
+  top: 20px; /*push down 20 px from original position inside container*/
+  left: 5px; /*push right 5 px from original position inside container*/
+
+  overflow: hidden;
+
+  font-size: 100%;
+}
+
+/*********************************/
+
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
@@ -92,3 +171,5 @@
     width: 100%;
   }
 }
+
+/*********************************/
